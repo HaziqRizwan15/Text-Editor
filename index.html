@@ -3,34 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Text Editor</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <h1>Text Editor</h1>
+
     <div>
-        <select name="" id="font-family">
+        <select id="font-family">
             <option value="">Select Font Family</option>
             <option value="monospace">Monospace</option>
             <option value="serif">Serif</option>
-            <option value="san-serif">San Serif</option>
+            <option value="sans-serif">Sans Serif</option>
         </select>
-        <select name="" id="font-size">
+        <select id="font-size">
             <option value="normal">Normal</option>
             <option value="heading">Heading</option>
             <option value="subHeading">Sub Heading</option>
         </select>
-        <button class="action_btn">bold</button>
-        <button class="action_btn">italic</button>
-        <button class="action_btn">underline</button>
-        <button class="action_btn">right</button>
-        <button class="action_btn">left</button>
-        <button class="action_btn">center</button>
-        <button class="action_btn">justify</button>
+        <button class="action_btn">Bold</button>
+        <button class="action_btn">Italic</button>
+        <button class="action_btn">Underline</button>
+        <button class="action_btn">Right</button>
+        <button class="action_btn">Left</button>
+        <button class="action_btn">Center</button>
+        <button class="action_btn">Justify</button>
     </div>
+
+    <!-- USER ke liye text editable bana diya -->
     <div>
-        <p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel itaque error officiis labore. Voluptatum possimus, asperiores illum facere labore est aspernatur consectetur non ea quam in, neque libero dignissimos commodi?</p>
+        <p id="text" contenteditable="true">Click here to edit this text...</p>
     </div>
+
     <script src="app.js"></script>
 </body>
 </html>
